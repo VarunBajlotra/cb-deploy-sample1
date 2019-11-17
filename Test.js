@@ -7,16 +7,8 @@ app.get('/',(req,res)=>{
     res.send('Hello! This is a sample app')
 })
 
-app.get('/hi',(req,res)=>{
-    res.send('Hello '+req.query.name)
-})
-
-app.get('bye',(req,res)=>{
-    res.send('Goodbye! '+req.query.name)
-})
-
 app.get('/app',(req,res)=>{
-    res.send('Hello how are you in our main app?')
+    res.send('Hello you are in our main app')
 })
 
 app.listen(PORT,()=>{
