@@ -15,6 +15,10 @@ app.get('bye',(req,res)=>{
     res.send('Goodbye! '+req.query.name)
 })
 
+app.get('/app',(req,res)=>{
+    res.send('Hello where are you?')
+})
+
 app.listen(PORT,()=>{
     console.log('Server started at http://localhost:4321 ' + PORT)
 })
